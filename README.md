@@ -3,7 +3,7 @@
 A small backup script which backs up a given database and pushes the `.sql` file to Amazon S3.
 ### How to use
 backuper is really simple to use, just 5 easy steps to get a fully MySQL Database export to Amazon S3.
-
+0. Be sure **mysqldump** is installed on your server. (https://dev.mysql.com/doc/refman/5.1/en/mysqldump.html)
 1. Create an AWS Account an activate [Amazon S3](http://aws.amazon.com/de/s3/). Be sure to copy your **AWS Access Key** and your **AWS Secret Key**!
 2. Upload the script, and the S3 PHP libary to your server. (`backuper.php` and `S3.php`)
 3. Make sure PHP has read and write rights in the folder where `backuper.php` is located.
