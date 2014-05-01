@@ -13,12 +13,18 @@ backuper is really simple to use, just 5 easy steps to get a fully MySQL Databas
 
 ### Settings
 **DB_USER** = the username for the database connection
+
 **DB_PW** = the password for the database connection
+
 **DB_HOST** = the host of your database, most likely `localhost`
+
 **DB_NAME** = the name of the database which backup should be saved
 
+
 **AWS_accessKey** = the access key of your Amazon AWS account
+
 **AWS_secretKey** = the secret key of your Amazon AWS account (needed for authorization)
+
 **S3_bucketName** = the name of the buckets where the `.sql` files should be saved
 
 ### Configuration options
@@ -31,6 +37,7 @@ backuper is really simple to use, just 5 easy steps to get a fully MySQL Databas
 
 ### Naming scheme
 Currently only one hardcoded naming scheme is possible.
+
 `YEAR_MONTH_DAY-HOUR:MINUTES:SECONDS_DATABASENAME-RANDOMNUMBER.sql`
 
 Example:
